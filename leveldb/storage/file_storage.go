@@ -618,7 +618,7 @@ func fsGenName(fd FileDesc) string {
 	case TypeJournal:
 		return fmt.Sprintf("%06d.log", fd.Num)
 	case TypeTable:
-		return fmt.Sprintf("%06d.ldb", fd.Num)
+		return fmt.Sprintf("%06d.sst", fd.Num)
 	case TypeTemp:
 		return fmt.Sprintf("%06d.tmp", fd.Num)
 	default:
