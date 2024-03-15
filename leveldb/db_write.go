@@ -10,9 +10,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/syndtr/goleveldb/leveldb/memdb"
-	"github.com/syndtr/goleveldb/leveldb/opt"
-	"github.com/syndtr/goleveldb/leveldb/util"
+	"github.com/om-secadvice/goleveldb/leveldb/memdb"
+	"github.com/om-secadvice/goleveldb/leveldb/opt"
+	"github.com/om-secadvice/goleveldb/leveldb/util"
 )
 
 func (db *DB) writeJournal(batches []*Batch, seq uint64, sync bool) error {

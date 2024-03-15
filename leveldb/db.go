@@ -17,14 +17,14 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/syndtr/goleveldb/leveldb/errors"
-	"github.com/syndtr/goleveldb/leveldb/iterator"
-	"github.com/syndtr/goleveldb/leveldb/journal"
-	"github.com/syndtr/goleveldb/leveldb/memdb"
-	"github.com/syndtr/goleveldb/leveldb/opt"
-	"github.com/syndtr/goleveldb/leveldb/storage"
-	"github.com/syndtr/goleveldb/leveldb/table"
-	"github.com/syndtr/goleveldb/leveldb/util"
+	"github.com/om-secadvice/goleveldb/leveldb/errors"
+	"github.com/om-secadvice/goleveldb/leveldb/iterator"
+	"github.com/om-secadvice/goleveldb/leveldb/journal"
+	"github.com/om-secadvice/goleveldb/leveldb/memdb"
+	"github.com/om-secadvice/goleveldb/leveldb/opt"
+	"github.com/om-secadvice/goleveldb/leveldb/storage"
+	"github.com/om-secadvice/goleveldb/leveldb/table"
+	"github.com/om-secadvice/goleveldb/leveldb/util"
 )
 
 // DB is a LevelDB database.
@@ -907,6 +907,7 @@ func (db *DB) GetSnapshot() (*Snapshot, error) {
 // GetProperty returns value of the given property name.
 //
 // Property names:
+//
 //	leveldb.num-files-at-level{n}
 //		Returns the number of files at level 'n'.
 //	leveldb.stats

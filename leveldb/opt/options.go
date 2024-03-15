@@ -10,9 +10,9 @@ package opt
 import (
 	"math"
 
-	"github.com/syndtr/goleveldb/leveldb/cache"
-	"github.com/syndtr/goleveldb/leveldb/comparer"
-	"github.com/syndtr/goleveldb/leveldb/filter"
+	"github.com/om-secadvice/goleveldb/leveldb/cache"
+	"github.com/om-secadvice/goleveldb/leveldb/comparer"
+	"github.com/om-secadvice/goleveldb/leveldb/filter"
 )
 
 const (
